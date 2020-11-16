@@ -4,7 +4,7 @@
 
        ╰(●’◡’●)╮
 
-to show point cloud for detection and tracking task.
+to show point cloud for detection and tracking task.  目标检测和追踪
 ========2019.12.9========
 '''
 from __future__ import print_function

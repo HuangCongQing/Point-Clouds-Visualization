@@ -4,7 +4,7 @@
 
        ╰(●’◡’●)╮
 
-to show point cloud for classification task.
+to show point cloud for classification task. 分类 通过颜色区分不同的类
 take data_whu and data_isprs as examples.
 ========2019.12.9========
 '''
