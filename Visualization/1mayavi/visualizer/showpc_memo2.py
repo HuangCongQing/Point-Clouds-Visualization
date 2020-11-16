@@ -82,7 +82,7 @@ def draw_lidar(pc, pc_label, color=None, fig=None, bgcolor=(0,0,0), pts_scale=1,
                   (125/255, 1, 0),
                   (0, 1, 0)]
                   
-
+    # 点云显示point3d
     mlab.points3d(pc[:,0], pc[:,1], pc[:,2],  color=color_list[1], mode=pts_mode, colormap = 'gnuplot', scale_factor=pts_scale, figure=fig) 
 
     lidar_label = pc_label # 点云label
@@ -120,7 +120,7 @@ def convert_bbox_to_corners(bbox):
     h = bbox.h#bbox[9]
     w = bbox.w#bbo
     center = bbox.t#[data[11],data[12],data[13]]
-    # 3d bounding box corners
+    # 3d bounding box corners 根据中心点和长宽高，把 8个顶点的坐标求出来
     x_corners = [l/2,l/2,-l/2,-l/2,l/2,l/2,-l/2,-l/2];
     y_corners = [h/2,h/2,h/2,h/2,-h/2,-h/2,-h/2,-h/2];
     z_corners = [w/2,-w/2,-w/2,w/2,w/2,-w/2,-w/2,w/2];
