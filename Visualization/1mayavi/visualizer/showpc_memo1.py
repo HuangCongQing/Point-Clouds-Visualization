@@ -14,7 +14,7 @@ import os
 import sys
 import numpy as np
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.dirname(BASE_DIR)
+ROOT_DIR = os.path.dirname(BASE_DIR) # 根路径
 sys.path.append(os.path.join(ROOT_DIR, 'mayavi'))
 
 try:
@@ -22,7 +22,7 @@ try:
 except NameError:
     raw_input = input  # Python 3
 
-
+# 类class
 class pointcloud_object(object):
     '''Load and parse object data into a usable format.'''
     
@@ -32,15 +32,16 @@ class pointcloud_object(object):
 
     def get_lidar(self, idx): 
         # assert(idx<data_num) 
-        lidar_filename = os.path.join(self.lidar_dir, '%03d.txt'%(idx))#bin
+        lidar_filename = os.path.join(self.lidar_dir, '%03d.txt'%(idx))#bin  获取文件路径 000 要有三位
         return load_velo_scan(lidar_filename)
 
+# 加载TXT文件
 def load_velo_scan(velo_filename):
-    scan = np.loadtxt(velo_filename)
+    scan = np.loadtxt(velo_filename) # 加载txt文件  不同文件使用不同的加载函数！！！
     print('the shape of scan is: ', scan.shape)
     return scan
 
-
+# 绘画
 def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts_color=None):
     ''' Draw lidar points
     Args:
@@ -59,6 +60,7 @@ def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts
 #       lamp        4   255 97  0
 #       fence       5   155 74  18
 #       others      6   106 90  205
+    # 不同类别，不同颜色
     color_list = [(0, 1, 0),
                   (1, 0, 0),
                   (0, 0, 1),
@@ -68,7 +70,7 @@ def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts
                   (0, 1, 1),
                   (106/255, 90/255, 205/255)]
 
-    without_semantic_label = True#False#              
+    without_semantic_label = False#True#            True： 点云颜色相同   False： 点云颜色不同 
 
     if without_semantic_label:
         mlab.points3d(pc[:,0], pc[:,1], pc[:,2], color=color_list[0], mode=pts_mode, colormap = 'gnuplot', scale_factor=pts_scale, figure=fig)
@@ -81,7 +83,7 @@ def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts
         # pc4_mask = pc[:,3]==4
         # pc5_mask = pc[:,3]==5
         # pc6_mask = pc[:,3]==6
-        pc0 = pc[pc[:,3]==0]
+        pc0 = pc[pc[:,3]==0] # 第四位表示label类别  一共7
         pc1 = pc[pc[:,3]==1]
         pc2 = pc[pc[:,3]==2]
         pc3 = pc[pc[:,3]==3]
@@ -109,6 +111,7 @@ def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts
     mlab.view(azimuth=270, elevation=0, focalpoint=[ pc[0,0], pc[0,1], pc[0,2]], distance=10.0, figure=fig)
     return fig
 
+# 显示lidar
 def show_lidar(pc_velo, img_fov=False): 
     ''' Show all LiDAR points.
         Draw 3d box in LiDAR point cloud (in velo coord system) '''
@@ -118,23 +121,23 @@ def show_lidar(pc_velo, img_fov=False):
     fig = mlab.figure(figure=None, bgcolor=(1,1,1),
         fgcolor=None, engine=None, size=(1000, 500))
     
-    draw_lidar(pc_velo, fig=fig)
+    draw_lidar(pc_velo, fig=fig) # 绘画
 
     mlab.show(1)
 
 
 def dataset_viz():
-    dataset = pointcloud_object(os.path.join(ROOT_DIR, 'data-whu'))
+    dataset = pointcloud_object(os.path.join(ROOT_DIR, 'data-whu')) # 路径
     # dataset = pointcloud_object(os.path.join(ROOT_DIR, 'data-isprs'))
     print('143:', dataset)
-    data_num = 10
+    data_num = 10 # data-whu文件夹下最多10 TXT文件
 
     for data_idx in range(data_num):
 
         pc_velo = dataset.get_lidar(data_idx)[:,0:4]
         print('the len of dataset is: ', data_num, 'data_idx is: ', data_idx)
 
-        show_lidar(pc_velo, False)
+        show_lidar(pc_velo, False) # 显示点云函数
         raw_input()
 
 if __name__=='__main__':
