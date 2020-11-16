@@ -85,7 +85,7 @@ def draw_lidar(pc, pc_label, color=None, fig=None, bgcolor=(0,0,0), pts_scale=1,
 
     mlab.points3d(pc[:,0], pc[:,1], pc[:,2],  color=color_list[1], mode=pts_mode, colormap = 'gnuplot', scale_factor=pts_scale, figure=fig) 
 
-    lidar_label = pc_label
+    lidar_label = pc_label # 点云label
 
     for idx in range(len(lidar_label)):
         color=(0,0,1)
@@ -113,6 +113,7 @@ def draw_lidar(pc, pc_label, color=None, fig=None, bgcolor=(0,0,0), pts_scale=1,
 
     return fig
 
+# bbox转化为中心点
 def convert_bbox_to_corners(bbox):
     # min_x, min_y, min_z, max_x, max_y, max_z, length_x, length_y, length_z
     l = bbox.l# bbox(8)#[8]
@@ -157,9 +158,9 @@ def dataset_viz():
     for data_idx in range(len(dataset)):
 
         print(('200: data_idx: ', data_idx))
-        pc_velo = dataset.get_lidar(data_idx)[:,0:7]
+        pc_velo = dataset.get_lidar(data_idx)[:,0:7]  # 原始点云数据
         # pc_velo = dataset.get_lidar(data_idx)[:,0:3]
-        pc_label = dataset.get_lidar_label(data_idx)#[:,0]
+        pc_label = dataset.get_lidar_label(data_idx)#[:,0] # label数据
 
         print('204: the len of dataset is: ', len(dataset), 'data_idx is: ', data_idx)
         print('205: the pc_label is:', pc_label)
