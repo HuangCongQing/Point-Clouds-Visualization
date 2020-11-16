@@ -18,7 +18,7 @@
 * https://github.com/liminle/point-cloud-lectern-memos
 
 
-分类任务
+语义分割任务
 * [showpc_memo1](Visualization/1mayavi/visualizer/showpc_memo1.py)
 
 目标检测跟踪任务
