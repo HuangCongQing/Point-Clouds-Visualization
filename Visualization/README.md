@@ -1,7 +1,7 @@
 <!--
  * @Author:HCQ 
  * @Date: 2020-11-16 11:21:00
- * @LastEditTime: 2020-11-16 11:27:47
+ * @LastEditTime: 2020-11-16 14:53:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /Point-Clouds/Visualization/README.md
@@ -15,11 +15,11 @@
 
 
 分类任务
-* [showpc_memo1](Visualization/1mayavi/visualizer/showpc_memo1.py)
+* [showpc_memo1](1mayavi/visualizer/showpc_memo1.py)
 
 目标检测跟踪任务
 
-* [showpc_memo2](Visualization/1mayavi/visualizer/showpc_memo2.py)
+* [showpc_memo2](1mayavi/visualizer/showpc_memo2.py)
 
 
 ## Open3D
