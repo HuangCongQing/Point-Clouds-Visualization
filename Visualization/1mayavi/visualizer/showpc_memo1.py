@@ -90,7 +90,7 @@ def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts
         pc4 = pc[pc[:,3]==4]
         pc5 = pc[pc[:,3]==5]
         pc6 = pc[pc[:,3]==6]
-        print('136: the size of pc0 is:', len(pc0))
+        print('136: the size of pc0 is:', len(pc0)) # 点的数量
         print('136: the size of pc1 is:', len(pc1))
         print('136: the size of pc2 is:', len(pc2))
         print('136: the size of pc3 is:', len(pc3))
