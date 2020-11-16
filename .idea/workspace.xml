@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61bd1b03-5ed0-4b60-a40e-a4b78aa73284" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Visualization/1mayavi/visualizer/showpc_memo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/1mayavi/visualizer/showpc_memo1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visualization/1mayavi/visualizer/showpc_memo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/1mayavi/visualizer/showpc_memo2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +19,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -35,10 +34,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="441" y="150" key="SettingsEditor" timestamp="1605497532357">
+    <state x="738" y="296" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605516047743">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="441" y="150" key="SettingsEditor/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605497532357" />
+    <state x="738" y="296" width="424" height="484" key="FileChooserDialogImpl/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605516047743" />
+    <state x="441" y="150" key="SettingsEditor" timestamp="1605515950917">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="441" y="150" key="SettingsEditor/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605515950917" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
