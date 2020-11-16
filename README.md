@@ -19,11 +19,14 @@
 
 
 语义分割任务
-* [showpc_memo1](Visualization/1mayavi/visualizer/showpc_memo1.py)
+* code： [showpc_memo1](Visualization/1mayavi/visualizer/showpc_memo1.py)
+* data：[Visualization/1mayavi/data-whu](Visualization/1mayavi/data-whu)  
+    * 链接: https://pan.baidu.com/s/11EvyY71Y2qrHz5BXodDi3w 提取码: w9ar 
 
 目标检测跟踪任务
 
-* [showpc_memo2](Visualization/1mayavi/visualizer/showpc_memo2.py)
+* code：[showpc_memo2](Visualization/1mayavi/visualizer/showpc_memo2.py)
+* data：[Visualization/1mayavi/showpc/isprs_frames0/training](Visualization/1mayavi/showpc/isprs_frames0/training)
 
 
 ### Open3D
