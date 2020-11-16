@@ -83,20 +83,20 @@ def draw_lidar(pc, fig=None, bgcolor=(0,0,0), pts_scale=1, pts_mode='point', pts
         # pc4_mask = pc[:,3]==4
         # pc5_mask = pc[:,3]==5
         # pc6_mask = pc[:,3]==6
-        pc0 = pc[pc[:,3]==0] # 第四位表示label类别  一共7
+        pc0 = pc[pc[:,3]==0] # 第四位表示label类别，将每一类都分好  一共7类
         pc1 = pc[pc[:,3]==1]
         pc2 = pc[pc[:,3]==2]
         pc3 = pc[pc[:,3]==3]
         pc4 = pc[pc[:,3]==4]
         pc5 = pc[pc[:,3]==5]
         pc6 = pc[pc[:,3]==6]
-        print('136: the size of pc0 is:', len(pc0)) # 点的数量
-        print('136: the size of pc1 is:', len(pc1))
-        print('136: the size of pc2 is:', len(pc2))
-        print('136: the size of pc3 is:', len(pc3))
-        print('136: the size of pc4 is:', len(pc4))
-        print('136: the size of pc5 is:', len(pc5))
-        print('136: the size of pc6 is:', len(pc6))
+        print('136: the size of pc0 is:', len(pc0)) # 点的数量  849168
+        print('136: the size of pc1 is:', len(pc1)) #  21484
+        print('136: the size of pc2 is:', len(pc2)) #  101805
+        print('136: the size of pc3 is:', len(pc3)) #  6048
+        print('136: the size of pc4 is:', len(pc4)) #  4783
+        print('136: the size of pc5 is:', len(pc5)) #  63868
+        print('136: the size of pc6 is:', len(pc6)) #  2626
 
         mlab.points3d(pc0[:,0], pc0[:,1], pc0[:,2],  color=color_list[0], mode=pts_mode, colormap = 'gnuplot', scale_factor=pts_scale, figure=fig) 
         mlab.points3d(pc1[:,0], pc1[:,1], pc1[:,2],  color=color_list[1], mode=pts_mode, colormap = 'gnuplot', scale_factor=pts_scale, figure=fig) 
