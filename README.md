@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2021-03-06 18:05:09
+ * @LastEditTime: 2021-03-06 18:05:46
  * @FilePath: /Point-Clouds/README.md
 -->
 # Point-Clouds-Visualization
@@ -19,6 +19,8 @@
 - open3D [`python`]
 - mayavi[`python`]
 - matplolib [`python`]
+
+个人笔记：https://www.yuque.com/huangzhongqing/hre6tf/eak3ba
 
 
 ### mayavi
