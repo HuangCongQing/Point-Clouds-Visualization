@@ -20,7 +20,7 @@
 - mayavi[`python`]
 - matplolib [`python`]
 
-可视化软件：cloudcompare （winodows&Ubuntu）
+可视化软件：cloudcompare （windows&Ubuntu）
 
 个人笔记：https://www.yuque.com/huangzhongqing/hre6tf/eak3ba
 
