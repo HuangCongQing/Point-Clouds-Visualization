@@ -4,8 +4,8 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-03-06 17:46:00
-LastEditTime: 2021-04-26 10:37:13
-FilePath: /Point-Clouds-Visualization/2open3D/03open3d_show_ply.py
+LastEditTime: 2021-04-26 10:41:51
+FilePath: /Point-Clouds-Visualization/2open3D/ply/03open3d_show_ply.py
 '''
 
 
@@ -27,7 +27,7 @@ from pyntcloud import PyntCloud # pyntcloud是用于处理 3D 点云的python �
 #                                   up=[-0.0694, -0.9768, 0.2024])
 
 # PyntCloud加载自己的点云文件
-file_name = "s3dis-best-result/conferenceRoom_1_GT.ply"
+file_name = "2open3D/data/conferenceRoom_1_GT.ply"
 point_cloud_pynt = PyntCloud.from_file(file_name)
 
 # np加载自己的点云文件
