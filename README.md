@@ -48,6 +48,8 @@
 
 https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 
+* [2open3D/Open3d学习计划](2open3D/Open3d学习计划)
+* [读取txt/ply文件](2open3D)
 
 ## References
 
