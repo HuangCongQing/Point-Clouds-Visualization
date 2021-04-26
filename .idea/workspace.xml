@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61bd1b03-5ed0-4b60-a40e-a4b78aa73284" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Point-Clouds.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Point-Clouds.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2open3D/ply/01read_ply.py" beforeDir="false" afterPath="$PROJECT_DIR$/2open3D/ply/01read_ply.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +20,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pytorch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.showpc_memo2">
+  <component name="RunManager" selected="Python.01read_ply">
+    <configuration name="01read_ply" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Point-Clouds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2open3D/ply" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2open3D/ply/01read_ply.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="showpc_memo1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Point-Clouds" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01read_ply" />
         <item itemvalue="Python.showpc_memo2" />
         <item itemvalue="Python.showpc_memo1" />
       </list>
@@ -86,46 +107,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="738" y="296" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606480346766">
+    <state width="1893" height="267" key="GridCell.Tab.0.bottom" timestamp="1619413795780">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="738" y="296" width="424" height="484" key="FileChooserDialogImpl/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1606480346766" />
-    <state width="1893" height="267" key="GridCell.Tab.0.bottom" timestamp="1605770673312">
+    <state width="1893" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1619413795780" />
+    <state width="1893" height="267" key="GridCell.Tab.0.center" timestamp="1619413795780">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1893" height="267" key="GridCell.Tab.0.bottom/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605770673312" />
-    <state width="1893" height="267" key="GridCell.Tab.0.center" timestamp="1605770673312">
+    <state width="1893" height="267" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1619413795780" />
+    <state width="1893" height="267" key="GridCell.Tab.0.left" timestamp="1619413795779">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1893" height="267" key="GridCell.Tab.0.center/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605770673312" />
-    <state width="1893" height="267" key="GridCell.Tab.0.left" timestamp="1605770673312">
+    <state width="1893" height="267" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1619413795779" />
+    <state width="1893" height="267" key="GridCell.Tab.0.right" timestamp="1619413795780">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1893" height="267" key="GridCell.Tab.0.left/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605770673311" />
-    <state width="1893" height="267" key="GridCell.Tab.0.right" timestamp="1605770673312">
+    <state width="1893" height="267" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1619413795780" />
+    <state x="609" y="234" width="700" height="530" key="recent.locations.popup" timestamp="1619413521532">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1893" height="267" key="GridCell.Tab.0.right/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605770673312" />
-    <state width="1893" height="330" key="GridCell.Tab.1.bottom" timestamp="1605531299309">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1893" height="330" key="GridCell.Tab.1.bottom/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605531299309" />
-    <state width="1893" height="330" key="GridCell.Tab.1.center" timestamp="1605531299309">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1893" height="330" key="GridCell.Tab.1.center/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605531299309" />
-    <state width="1893" height="330" key="GridCell.Tab.1.left" timestamp="1605531299309">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1893" height="330" key="GridCell.Tab.1.left/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605531299309" />
-    <state width="1893" height="330" key="GridCell.Tab.1.right" timestamp="1605531299309">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1893" height="330" key="GridCell.Tab.1.right/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605531299309" />
-    <state x="441" y="150" key="SettingsEditor" timestamp="1605523822997">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="441" y="150" key="SettingsEditor/1920.163.1920.1080/0.0.1920.1032@0.0.1920.1032" timestamp="1605523822997" />
+    <state x="609" y="234" width="700" height="530" key="recent.locations.popup/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1619413521532" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
