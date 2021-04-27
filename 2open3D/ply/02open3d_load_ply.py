@@ -4,8 +4,8 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-03-06 17:46:00
-LastEditTime: 2021-04-27 10:49:29
-FilePath: /Point-Clouds-Visualization/2open3D/ply/03open3d_show_ply.py
+LastEditTime: 2021-04-27 10:51:30
+FilePath: /Point-Clouds-Visualization/2open3D/ply/02open3d_load_ply.py
 '''
 
 
@@ -26,9 +26,6 @@ from pyntcloud import PyntCloud # pyntcloud是用于处理 3D 点云的python �
 #                                   front=[0.4257, -0.2125, -0.8795],
 #                                   lookat=[2.6172, 2.0475, 1.532],
 #                                   up=[-0.0694, -0.9768, 0.2024])
-
-
-
 
 
 # ##########################################2 @@@@######################################
