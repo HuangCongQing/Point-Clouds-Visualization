@@ -26,7 +26,7 @@ def draw_points():
 
     # 点云加载===============================
     print("可视化原始点云\n")
-    files_path = "/home/hcq/pointcloud/Point-Clouds-Visualization/data_test/bin"
+    files_path = "/home/hcq/pointcloud/Point-Clouds-Visualization/data_test/bin/livox"
     file_list = os.listdir(files_path)
     file_list.sort()
     for file in file_list:
@@ -37,7 +37,7 @@ def draw_points():
         # 加载点云
         pcobj.points = o3d.utility.Vector3dVector(pcs)
         # 调整点云颜色
-        # pcobj.paint_uniform_color([1, 0, 0])
+        pcobj.paint_uniform_color([1, 0, 0])
         # 可视化
         vis.update_geometry(pcobj)
         vis.add_geometry(pcobj)

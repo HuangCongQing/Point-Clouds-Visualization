@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61bd1b03-5ed0-4b60-a40e-a4b78aa73284" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Point-Clouds.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Point-Clouds.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2open3D/practice/01kitti_pc/01kitti_pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/2open3D/practice/01kitti_pc/01kitti_pc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_test/bin/000000.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_test/bin/000001.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_test/bin/000002.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_test/bin/000003.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_test/predict/test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +35,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.01kitti_pc">
+  <component name="RunManager" selected="Python.02kitti_pc_box">
     <configuration name="01kitti_pc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Point-Clouds" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,6 +72,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2open3D/ply/01read_ply.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02kitti_pc_box" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Point-Clouds" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2open3D/practice/02kitti_pc&amp;box" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2open3D/practice/02kitti_pc&amp;box/02kitti_pc_box.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.02kitti_pc_box" />
         <item itemvalue="Python.01kitti_pc" />
         <item itemvalue="Python.01read_ply" />
         <item itemvalue="Python.showpc_memo2" />
@@ -137,12 +164,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605497324630</updated>
-      <workItem from="1651743503134" duration="2128000" />
+      <workItem from="1651743503134" duration="7023000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -157,10 +195,21 @@
           <line>51</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2open3D/practice/02kitti_pc&amp;box/02kitti_pc_box.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/open-mmlab/lib/python3.7/site-packages/alfred/fusion/common.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Point_Clouds_Visualization$01kitti_pc.coverage" NAME="01kitti_pc Coverage Results" MODIFIED="1651745624148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2open3D/practice/01kitti_pc" />
+    <SUITE FILE_PATH="coverage/Point_Clouds_Visualization$02kitti_pc_box.coverage" NAME="02kitti_pc_box Coverage Results" MODIFIED="1651750478371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2open3D/practice/02kitti_pc&amp;box" />
+    <SUITE FILE_PATH="coverage/Point_Clouds_Visualization$01kitti_pc.coverage" NAME="01kitti_pc Coverage Results" MODIFIED="1651747726090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2open3D/practice/01kitti_pc" />
   </component>
 </project>
