@@ -92,12 +92,12 @@ def draw_points_with_boxes():
             # vis.add_geometry(line_set)
             # 将视角变为自由模式，可以通过拖动和滚轮调整视角。
             if line_set.has_lines():
-                line_set.points = o3d.utility.Vector3dVector(pts3d[0])
+                line_set.points = o3d.utility.Vector3dVector(pts3d[0]) # 点
                 line_set.lines = o3d.utility.Vector2iVector(lines)
                 line_set.colors = o3d.utility.Vector3dVector(colors)
-                vis.update_geometry(line_set)
+                vis.update_geometry(line_set) #
             else:
-                line_set.points = o3d.utility.Vector3dVector(pts3d[0])
+                line_set.points = o3d.utility.Vector3dVector(pts3d[0]) # 点
                 line_set.lines = o3d.utility.Vector2iVector(lines)
                 line_set.colors = o3d.utility.Vector3dVector(colors)
                 vis.add_geometry(line_set)
