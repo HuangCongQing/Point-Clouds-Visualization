@@ -1,11 +1,11 @@
 '''
-Description: open3D显示点云 https://blog.csdn.net/weixin_41281151/article/details/107119326  显示空白
+Description: 使用pyntcloud库可视化 open3D显示点云 https://blog.csdn.net/weixin_41281151/article/details/107119326  显示空白
 Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-03-06 17:46:00
-LastEditTime: 2021-04-27 10:51:30
-FilePath: /Point-Clouds-Visualization/2open3D/ply/02open3d_load_ply.py
+LastEditTime: 2022-05-05 15:12:43
+FilePath: /Point-Clouds-Visualization/2open3D/ply/02PyntCloud_load_ply.py
 '''
 
 

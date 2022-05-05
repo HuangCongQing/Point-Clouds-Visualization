@@ -1,11 +1,11 @@
 '''
-Description: https://blog.csdn.net/io569417668/article/details/108978225
-
+Description: Open3d学习计划——高级篇 6（体素化）
+ https://blog.csdn.net/io569417668/article/details/108978225
 Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-04-26 10:41:04
-LastEditTime: 2021-04-26 10:52:56
+LastEditTime: 2022-05-05 15:11:51
 FilePath: /Point-Clouds-Visualization/2open3D/ply/voxel_show_ply.py
 '''
 

@@ -1,11 +1,11 @@
 '''
-Description: 
+Description: 先用o3d加载数据，然后matplotlib可视化
 Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-04-26 10:58:29
-LastEditTime: 2021-04-26 12:54:40
-FilePath: /Point-Clouds-Visualization/2open3D/ply/01read_ply.py
+LastEditTime: 2022-05-05 15:14:36
+FilePath: /Point-Clouds-Visualization/2open3D/ply/01o3d_load_ply&plt_vis.py
 '''
 import open3d as o3d
 import numpy as np
