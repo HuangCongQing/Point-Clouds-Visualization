@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2022-05-06 11:08:08
+ * @LastEditTime: 2022-05-06 12:32:05
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 
@@ -63,6 +63,21 @@ https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 * [01kitti_pc](2open3D/practice/01kitti_pc)
 * [02kitti_pc&box](2open3D/practice/02kitti_pc&box)
 * ...
+
+##### 子仓库代码bug:运行子仓库代码需要修改
+* [open3d-kitti-visualization](2open3D/practice/open3d-kitti-visualization)
+
+修改文件：2open3D/practice/open3d-kitti-visualization/open3d_geometry/open3d_arrow.py
+
+```python
+	# mesh.transform(T)
+	# mesh.rotate([0,beta,0],center=False) # TypeError: rotate(): incompatible function arguments. The following argument types are supported:
+	# mesh.rotate([0,0,gamma],center=False)
+	# fix:w维度不对 np.expand_dims(np.array([0,beta,0], dtype=np.float64),1).shape
+	mesh.rotate(mesh.get_rotation_matrix_from_xyz((0,beta,0)), center=mesh.get_center())
+	mesh.rotate(mesh.get_rotation_matrix_from_xyz((0,0,gamma)), center=mesh.get_center())
+
+```
 
 ## References
 
