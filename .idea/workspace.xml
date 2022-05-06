@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61bd1b03-5ed0-4b60-a40e-a4b78aa73284" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2open3D/practice/open3d-kitti-visualization/open3d_geometry/open3d_arrow.py" beforeDir="false" afterPath="$PROJECT_DIR$/2open3D/practice/open3d-kitti-visualization/open3d_geometry/open3d_arrow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2open3D/practice/open3d-kitti-visualization" beforeDir="false" afterPath="$PROJECT_DIR$/2open3D/practice/open3d-kitti-visualization" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605497324630</updated>
       <workItem from="1651743503134" duration="7023000" />
-      <workItem from="1651804558261" duration="5584000" />
+      <workItem from="1651804558261" duration="5968000" />
     </task>
     <servers />
   </component>
