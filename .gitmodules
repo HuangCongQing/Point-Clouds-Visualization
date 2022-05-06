@@ -1,0 +1,3 @@
+[submodule "2open3D/practice/open3d-kitti-visualization"]
+	path = 2open3D/practice/open3d-kitti-visualization
+	url = git@github.com:chaomath/open3d-kitti-visualization.git
