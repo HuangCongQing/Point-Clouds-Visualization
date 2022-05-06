@@ -17,24 +17,30 @@ def draw_points_with_boxes():
     vis = o3d.visualization.Visualizer()
     # vis.create_window(window_name='pcd', width=800, height=600)
     vis.create_window(window_name='pcd')
+
     # 可视化参数设置
     opt = vis.get_render_option()
-    # 视角拖拽
-    ctr = vis.get_view_control()
-    ctr.set_lookat(np.array([0.0, 0.0, 55.0]))
-    ctr.set_up((0, -1, 0))  # set the positive direction of the x-axis as the up direction
-    ctr.set_front((-1, 0, 0))  # set the positive direction of the x-axis toward you
-
     # 设置背景色
     opt.background_color = np.asarray([0, 0, 0])
     # 设置点云大小
     opt.point_size = 1
     opt.show_coordinate_frame = True
+
+    # 视角拖拽
+    ctr = vis.get_view_control()
+    # ctr.set_lookat(np.array([0.0, 0.0, 55.0]))
+    # ctr.set_up((0, -1, 0))  # set the positive direction of the x-axis as the up direction
+    # ctr.set_front((-1, 0, 0))  # set the positive direction of the x-axis toward you
+    ctr.change_field_of_view(step=0.1)
+    ctr.set_zoom(0.1)
+    ctr.set_lookat([0, 0, 0])
+    ctr.set_front([0, -np.pi/4, np.pi/4])
+
     # 创造pcd类型数据(后面调用pcobj.points = ...)
     pcobj = o3d.geometry.PointCloud() # 不要放在for循环里面
     # road_pc = o3d.geometry.PointCloud() # 可以创建多个！！
     # 鼠标变换视角
-    to_reset = True
+    # to_reset = True
 
     # 点云加载===============================
     files_path = "/home/hcq/pointcloud/Point-Clouds-Visualization/data_test/bin/livox"
@@ -61,9 +67,9 @@ def draw_points_with_boxes():
             vis.update_geometry(pcobj)
 
         # 鼠标变换视角
-        if to_reset:
-            vis.reset_view_point(True)
-            to_reset = False
+        # if to_reset:
+        #     vis.reset_view_point(True)
+        #     to_reset = False
         # 添加box========================================================================
         # 找到box
         txt_path = "/home/hcq/pointcloud/Point-Clouds-Visualization/data_test/predict/livox"
