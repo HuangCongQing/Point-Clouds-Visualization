@@ -4,8 +4,8 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2021-03-06 18:05:46
- * @FilePath: /Point-Clouds/README.md
+ * @LastEditTime: 2022-05-06 11:08:08
+ * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 
 # Point-Clouds-Visualization
@@ -25,6 +25,12 @@
 可视化软件：cloudcompare （windows&Ubuntu）
 
 个人笔记：https://www.yuque.com/huangzhongqing/hre6tf/eak3ba
+
+```
+# 克隆包含子仓库：https://github.com/chaomath/open3d-kitti-visualization
+git clone --recursive https://github.com/HuangCongQing/Point-Clouds-Visualization
+```
+
 
 ### mayavi
 
@@ -50,6 +56,13 @@ https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 
 * [2open3D/Open3d学习计划](2open3D/Open3d学习计划)
 * [读取txt/ply文件](2open3D)
+
+#### open3d实战项目
+* [open3d-kitti-visualization](2open3D/practice/open3d-kitti-visualization)
+  * ref:https://github.com/chaomath/open3d-kitti-visualization
+* [01kitti_pc](2open3D/practice/01kitti_pc)
+* [02kitti_pc&box](2open3D/practice/02kitti_pc&box)
+* ...
 
 ## References
 
