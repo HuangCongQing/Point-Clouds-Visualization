@@ -1,2 +1,4 @@
 Visualization/1mayavi/data-whu/000.txt
 venv
+.idea
+2open3D/practice/open3d-kitti-visualization/open3d_geometry/__pycache__
