@@ -17,7 +17,7 @@
 ## Visualization可视化
 
 - pcl 点云可视化 [`c++`]
-- ROS topic可视化  [`c++`]
+- rviz(ROS) topic可视化  [`c++`][`python`]
 - open3D [`python`]
 - mayavi[`python`]
 - matplolib [`python`]
