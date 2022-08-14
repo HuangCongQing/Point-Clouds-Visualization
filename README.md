@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2022-05-06 12:32:05
+ * @LastEditTime: 2022-08-14 14:20:16
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 
@@ -16,7 +16,7 @@
 
 ## Visualization可视化
 
-- pcl 点云可视化 [`c++`]
+- pcl 点云可视化 [`c++`]： [pcl-visualization可视化](https://github.com/HuangCongQing/pcl-learning/tree/master/15visualization%E5%8F%AF%E8%A7%86%E5%8C%96)
 - rviz(ROS) topic可视化  [`c++`][`python`]
 - open3D [`python`]
 - mayavi[`python`]
