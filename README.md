@@ -4,8 +4,8 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2022-08-14 14:20:16
- * @FilePath: /Point-Clouds-Visualization/README.md
+ * @LastEditTime: 2022-09-03 23:39:35
+ * @FilePath: \Point-Clouds-Visualization\README.md
 -->
 
 # Point-Clouds-Visualization
@@ -16,11 +16,11 @@
 
 ## Visualization可视化
 
-- pcl 点云可视化 [`c++`]： [pcl-visualization可视化](https://github.com/HuangCongQing/pcl-learning/tree/master/15visualization%E5%8F%AF%E8%A7%86%E5%8C%96)
-- rviz(ROS) topic可视化  [`c++`][`python`]
 - open3D [`python`]
 - mayavi[`python`]
 - matplolib [`python`]
+- rviz(ROS) topic可视化  [`c++`][`python`]
+- pcl 点云可视化 [`c++`]： [pcl-visualization可视化](https://github.com/HuangCongQing/pcl-learning/tree/master/15visualization%E5%8F%AF%E8%A7%86%E5%8C%96)
 
 可视化软件：cloudcompare （windows&Ubuntu）
 
@@ -32,7 +32,8 @@ git clone --recursive https://github.com/HuangCongQing/Point-Clouds-Visualizatio
 ```
 
 
-### mayavi
+
+### 1mayavi
 
 参考自：
 
@@ -50,7 +51,7 @@ git clone --recursive https://github.com/HuangCongQing/Point-Clouds-Visualizatio
 * code：[showpc_memo2](1mayavi/visualizer/showpc_memo2.py)
 * data：[1mayavi/showpc/isprs_frames0/training](1mayavi/showpc/isprs_frames0/training)
 
-### Open3D
+### 2Open3D
 
 https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 
@@ -78,6 +79,17 @@ https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 	mesh.rotate(mesh.get_rotation_matrix_from_xyz((0,0,gamma)), center=mesh.get_center())
 
 ```
+
+
+### 3 rviz(ROS) topic可视化  [`c++`][`python`]
+
+python版本: ubuntu20.04 ，ROS foxy版本
+
+#### vis  points&bbox
+
+*  [3ros2_python/vis_ros2.ipynb](3ros2_python/vis_ros2.ipynb)
+
+
 
 ## References
 
