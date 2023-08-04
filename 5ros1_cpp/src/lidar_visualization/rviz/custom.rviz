@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /PointCloud21
+        - /Marker1
       Splitter Ratio: 0.5
     Tree Height: 839
   - Class: rviz/Selection
@@ -34,6 +36,15 @@ Toolbars:
 Visualization Manager:
   Class: ""
   Displays:
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Show Trail: false
+      Value: true
     - Alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
@@ -55,14 +66,14 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
+        Max Value: 6.773417949676514
+        Min Value: -1.9597545862197876
         Value: true
       Axis: Z
-      Channel Name: intensity
+      Channel Name: y
       Class: rviz/PointCloud2
-      Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color: 138; 226; 52
+      Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -73,12 +84,20 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.05000000074505806
       Style: Flat Squares
-      Topic: /pcd
+      Topic: /point_cloud
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /marker
+      Name: Marker
+      Namespaces:
+        pcd_files: true
+      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
@@ -108,7 +127,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 10
+      Distance: 38.77392578125
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -124,9 +143,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.785398006439209
+      Pitch: 0.5353990793228149
       Target Frame: <Fixed Frame>
-      Yaw: 0.785398006439209
+      Yaw: 2.718575954437256
     Saved: ~
 Window Geometry:
   Displays:

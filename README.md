@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2023-08-04 23:14:12
+ * @LastEditTime: 2023-08-04 23:24:46
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 ![image](https://user-images.githubusercontent.com/20675770/188302348-2a278d02-73d5-4e2f-9b82-62f7471eb8ae.png)
@@ -97,7 +97,7 @@ python版本: ubuntu20.04 ，ROS foxy版本
 ### 5 ros1_cpp [`c++`]
 
 > 5ros1_cpp/src/lidar_visualization
-#### feat1: 遍历文件夹里的文件（pcd或者ply格式）
+#### feat1: 遍历文件夹里的文件（pcd或者ply格式）可视化点云和对应文件名字
 
 ```shell
 # 编译
