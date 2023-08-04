@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2023-08-05 01:15:14
+ * @LastEditTime: 2023-08-05 01:19:41
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 ![image](https://user-images.githubusercontent.com/20675770/188302348-2a278d02-73d5-4e2f-9b82-62f7471eb8ae.png)
@@ -126,7 +126,7 @@ roslaunch lidar_visualization test.launch
 
 ```
 可视化结果
-![](https://cdn.nlark.com/yuque/0/2023/png/232596/1691163380954-854217fe-65be-41f8-a872-58b32a092560.png)
+![](https://cdn.nlark.com/yuque/0/2023/png/232596/1691169568600-6d70422f-e7dd-439b-a4c9-a5890d4f6782.png?x-oss-process=image%2Fresize%2Cw_1111%2Climit_0)
 
 
 
