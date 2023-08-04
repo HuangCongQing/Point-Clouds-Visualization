@@ -1,0 +1,13 @@
+<launch>
+   
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find lidar_visualization)/rviz/custom.rviz"/>
+   <node
+	name= "lidars_visualization" 
+	pkg= "lidar_visualization"
+	type="lidars_visualization"
+	output= "screen"
+	required = "true">
+   </node>
+
+
+</launch>

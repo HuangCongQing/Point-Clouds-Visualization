@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2022-08-14 14:20:16
+ * @LastEditTime: 2023-08-04 23:10:30
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 
@@ -32,7 +32,7 @@ git clone --recursive https://github.com/HuangCongQing/Point-Clouds-Visualizatio
 ```
 
 
-### mayavi
+### 1 mayavi
 
 参考自：
 
@@ -50,7 +50,7 @@ git clone --recursive https://github.com/HuangCongQing/Point-Clouds-Visualizatio
 * code：[showpc_memo2](1mayavi/visualizer/showpc_memo2.py)
 * data：[1mayavi/showpc/isprs_frames0/training](1mayavi/showpc/isprs_frames0/training)
 
-### Open3D
+### 2 Open3D
 
 https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 
@@ -78,6 +78,29 @@ https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 	mesh.rotate(mesh.get_rotation_matrix_from_xyz((0,0,gamma)), center=mesh.get_center())
 
 ```
+
+### 3 ros1_cpp
+
+#### feat1: 遍历文件夹里的文件（pcd或者ply格式）
+
+```shell
+# 编译
+catkin_make
+
+# 运行
+## 方式1
+rosrun lidar_visualization lidars_visualization
+
+## 方式2
+roslaunch lidar_visualization test.launch
+
+```
+
+
+
+### 4 ros2_python
+
+
 
 ## References
 
