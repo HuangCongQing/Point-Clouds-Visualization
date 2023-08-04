@@ -12,6 +12,11 @@
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "pcd_visualization");
+    // 参数设置
+    std::string frame_id = "livox_frame";
+    std::string lidar_topic = "/livox/lidar";
+
+    // 
     ros::NodeHandle nh;
 
     // PCD/PLY 文件夹路径
@@ -20,7 +25,7 @@ int main(int argc, char** argv)
     // PointCloud2 消息的发布者
 
     // 创建用于PointCloud2消息的ROS发布器
-    ros::Publisher cloud_pub = nh.advertise<sensor_msgs::PointCloud2>("point_cloud", 1);
+    ros::Publisher cloud_pub = nh.advertise<sensor_msgs::PointCloud2>(lidar_topic, 1);
 
     // 创建用于Marker消息的ROS发布器
     ros::Publisher marker_pub = nh.advertise<visualization_msgs::Marker>("marker", 1);
@@ -63,7 +68,7 @@ int main(int argc, char** argv)
             // 将PCL点云转换为ROS PointCloud2消息
             sensor_msgs::PointCloud2 msg;
             pcl::toROSMsg(*cloud, msg);
-            msg.header.frame_id = "map"; // 设置在RViz中可视化时的坐标系
+            msg.header.frame_id = frame_id; // 设置在RViz中可视化时的坐标系
 
             // 发布PointCloud2消息
             cloud_pub.publish(msg);
@@ -71,7 +76,7 @@ int main(int argc, char** argv)
             // 发布文字信息=====================================================
             // 创建一个Marker消息，在RViz中显示文件名
             visualization_msgs::Marker marker;
-            marker.header.frame_id = "map";
+            marker.header.frame_id = frame_id;
             marker.header.stamp = ros::Time::now();
             marker.ns = "pcd_files";
             marker.id = 0; // 显示多个文字需要不同
@@ -96,7 +101,7 @@ int main(int argc, char** argv)
             marker_pub.publish(marker);
 
             // 等待一小段时间
-            ros::Duration(0.5).sleep();
+            ros::Duration(1.0).sleep();
         }
 
         ros::spinOnce();

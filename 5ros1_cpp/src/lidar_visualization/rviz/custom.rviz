@@ -86,7 +86,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.05000000074505806
       Style: Flat Squares
-      Topic: /point_cloud
+      Topic: /livox/lidar
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -103,7 +103,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: map
+    Fixed Frame: livox_frame
     Frame Rate: 30
   Name: root
   Tools:
@@ -127,7 +127,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 38.77392578125
+      Distance: 28.244295120239258
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1

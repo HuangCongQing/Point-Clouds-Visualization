@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2023-08-04 23:36:47
+ * @LastEditTime: 2023-08-05 01:15:14
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
 ![image](https://user-images.githubusercontent.com/20675770/188302348-2a278d02-73d5-4e2f-9b82-62f7471eb8ae.png)
@@ -101,6 +101,18 @@ docs: https://www.yuque.com/huangzhongqing/ld627o/bovm2ar3ucgb8905
 > 5ros1_cpp/src/lidar_visualization
 #### feat1: 遍历文件夹里的文件（pcd或者ply格式）可视化点云和对应文件名字
 
+1 修改参数：根据自己的需要修改下面3个参数
+```cpp
+
+// 参数设置
+std::string frame_id = "livox_frame";
+std::string lidar_topic = "/livox/lidar";
+// PCD/PLY 文件夹路径
+std::string pc_dir = "/home/hcq/project/board检测/ws_board/src/board_detection/testdata"; // 替换为您的PCD或PLY文件目录的路径
+
+```
+
+2 编译和运行：
 ```shell
 # 编译
 catkin_make
