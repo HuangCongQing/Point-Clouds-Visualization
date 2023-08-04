@@ -96,6 +96,8 @@ python版本: ubuntu20.04 ，ROS foxy版本
 
 ### 5 ros1_cpp [`c++`]
 
+docs: https://www.yuque.com/huangzhongqing/ld627o/bovm2ar3ucgb8905
+
 > 5ros1_cpp/src/lidar_visualization
 #### feat1: 遍历文件夹里的文件（pcd或者ply格式）可视化点云和对应文件名字
 
