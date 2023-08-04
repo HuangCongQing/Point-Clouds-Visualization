@@ -4,9 +4,11 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2020-11-16 11:21:14
- * @LastEditTime: 2023-08-04 23:10:30
+ * @LastEditTime: 2023-08-04 23:14:12
  * @FilePath: /Point-Clouds-Visualization/README.md
 -->
+![image](https://user-images.githubusercontent.com/20675770/188302348-2a278d02-73d5-4e2f-9b82-62f7471eb8ae.png)
+
 
 # Point-Clouds-Visualization
 
@@ -16,11 +18,11 @@
 
 ## Visualization可视化
 
-- pcl 点云可视化 [`c++`]： [pcl-visualization可视化](https://github.com/HuangCongQing/pcl-learning/tree/master/15visualization%E5%8F%AF%E8%A7%86%E5%8C%96)
-- rviz(ROS) topic可视化  [`c++`][`python`]
 - open3D [`python`]
 - mayavi[`python`]
 - matplolib [`python`]
+- rviz(ROS) topic可视化  [`c++`][`python`]
+- pcl 点云可视化 [`c++`]： [pcl-visualization可视化](https://github.com/HuangCongQing/pcl-learning/tree/master/15visualization%E5%8F%AF%E8%A7%86%E5%8C%96)
 
 可视化软件：cloudcompare （windows&Ubuntu）
 
@@ -79,8 +81,22 @@ https://www.yuque.com/huangzhongqing/hre6tf/xk0gxn
 
 ```
 
-### 3 ros1_cpp
 
+
+### 4 ros2_python [`python`]
+
+
+python版本: ubuntu20.04 ，ROS foxy版本
+
+#### vis  points&bbox
+
+*  [3ros2_python/vis_ros2.ipynb](3ros2_python/vis_ros2.ipynb)
+
+
+
+### 5 ros1_cpp [`c++`]
+
+> 5ros1_cpp/src/lidar_visualization
 #### feat1: 遍历文件夹里的文件（pcd或者ply格式）
 
 ```shell
@@ -95,11 +111,6 @@ rosrun lidar_visualization lidars_visualization
 roslaunch lidar_visualization test.launch
 
 ```
-
-
-
-### 4 ros2_python
-
 
 
 ## References
