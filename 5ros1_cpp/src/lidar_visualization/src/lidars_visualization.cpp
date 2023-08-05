@@ -32,35 +32,54 @@ int main(int argc, char** argv)
 
     ros::Rate loop_rate(1);
 
+    // 对文件列表进行排序
+    // 创建一个vector来存储目录中的文件列表
+    std::vector<boost::filesystem::path> file_list;
+    // 遍历目录并将文件添加到file_list中
+    boost::filesystem::directory_iterator end_itr;
+    for (boost::filesystem::directory_iterator itr(pc_dir); itr != end_itr; ++itr)
+    {
+        if (boost::filesystem::is_regular_file(itr->status()))
+        {
+            file_list.push_back(itr->path());
+        }
+    }
+
+    // 对file_list进行排序
+    std::sort(file_list.begin(), file_list.end());
+
     while (ros::ok())
     {
         // 遍历PCD/PLY文件夹中的所有文件
-        for (const auto& file : boost::filesystem::directory_iterator(pc_dir))
+        // 不排序
+        // for (const auto& file : boost::filesystem::directory_iterator(pc_dir))
+        // 排序
+        for (const auto& file : file_list)
         {
             // 获取文件的后缀名
-            std::string file_extension = boost::filesystem::extension(file.path());
+            std::string file_extension = boost::filesystem::extension(file);
 
             // 根据后缀名判断文件类型并加载
             pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
             if (boost::iequals(file_extension, ".pcd"))
             {
-                if (pcl::io::loadPCDFile<pcl::PointXYZ>(file.path().string(), *cloud) == -1)
+                if (pcl::io::loadPCDFile<pcl::PointXYZ>(file.string(), *cloud) == -1)
                 {
-                    ROS_ERROR_STREAM("无法加载PCD文件: " << file.path().string());
+                    ROS_ERROR_STREAM("无法加载PCD文件: " << file.string());
                     continue;
                 }
             }
             else if (boost::iequals(file_extension, ".ply"))
             {
-                if (pcl::io::loadPLYFile<pcl::PointXYZ>(file.path().string(), *cloud) == -1)
+                if (pcl::io::loadPLYFile<pcl::PointXYZ>(file.string(), *cloud) == -1)
                 {
-                    ROS_ERROR_STREAM("无法加载PLY文件: " << file.path().string());
+                    ROS_ERROR_STREAM("无法加载PLY文件: " << file.string());
                     continue;
                 }
             }
             else
             {
-                ROS_WARN_STREAM("跳过不支持的文件类型: " << file.path().string());
+                ROS_WARN_STREAM("跳过不支持的文件类型: " << file.string());
                 continue;
             }
 
@@ -95,7 +114,7 @@ int main(int argc, char** argv)
             marker.pose.position.z = 5.0;
             marker.lifetime = ros::Duration();
             // 从完整路径中提取文件名
-            std::string file_name = file.path().string().substr(file.path().string().find_last_of("/") + 1);
+            std::string file_name = file.string().substr(file.string().find_last_of("/") + 1);
             marker.text = file_name; //<<<<<<<<<<<<<<<<<<<<<<
             // 发布Marker消息
             marker_pub.publish(marker);
