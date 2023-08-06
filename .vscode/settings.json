@@ -63,5 +63,6 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/hcq/pointcloud/Point-Clouds-Visualization/5ros1_cpp/src/lidar_visualization"
 }

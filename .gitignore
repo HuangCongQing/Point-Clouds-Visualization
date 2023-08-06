@@ -6,3 +6,4 @@ venv
 5ros1_cpp/build
 5ros1_cpp/devel
 5ros1_cpp/src/CMakeLists.txt
+build
