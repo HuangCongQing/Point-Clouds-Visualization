@@ -20,7 +20,7 @@ int main(int argc, char** argv)
     ros::NodeHandle nh;
 
     // PCD/PLY 文件夹路径
-    std::string pc_dir = "/home/hcq/project/board检测/ws_board/src/board_detection/selecteddata"; // 替换为您的PCD或PLY文件目录的路径
+    std::string pc_dir = "/home/hcq/project/board检测/ws_board/src/board_detection/testdata/calibra_2023-07-06-15-13-46"; // 替换为您的PCD或PLY文件目录的路径
 
     // PointCloud2 消息的发布者
 
