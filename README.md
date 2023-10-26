@@ -24,7 +24,9 @@
 - rviz(ROS) topic可视化  [`c++`][`python`]
 - pcl 点云可视化 [`c++`]： [pcl-visualization可视化](https://github.com/HuangCongQing/pcl-learning/tree/master/15visualization%E5%8F%AF%E8%A7%86%E5%8C%96)
 
-可视化软件：cloudcompare （windows&Ubuntu）
+可视化软件：
+1. cloudcompare( Linux、Windows 和 MacOS )
+2. Meshlab( Linux、Windows 和 MacOS )
 
 个人笔记：https://www.yuque.com/huangzhongqing/hre6tf/eak3ba
 
