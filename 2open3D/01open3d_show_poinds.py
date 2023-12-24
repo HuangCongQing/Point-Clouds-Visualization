@@ -4,7 +4,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-03-06 17:46:00
-LastEditTime: 2023-12-25 00:09:43
+LastEditTime: 2023-12-25 00:11:08
 FilePath: /Point-Clouds-Visualization/2open3D/01open3d_show_poinds.py
 '''
 
@@ -12,7 +12,7 @@ import open3d as o3d
 import numpy as np
 
 
-
+# 参考https://blog.csdn.net/weixin_53610475/article/details/128188372
 def vis_with_mesh_file(path_obj):
     #模型路径，支持后缀：stl/ply/obj/off/gltf/glb
     # path_obj = 'Rmk3.obj'
